@@ -1,65 +1,76 @@
-:root {
-  --dark-cerulean: #124e78;
-  --maastricht-blue: #0b132b;
-  --yankees-blue: #1c2541;
-  --sea-serpent: #5bc0be;
-  --aquamarine: #6fffe9;
-  --react: #00d8ff;
-}
-
-html {
-  background: var(--yankees-blue);
-}
 body {
-  margin: 0;
-  font-family: "Montserrat", sans-serif;
-  color: white;
+  display: grid;
+  justify-content: center;
+  margin-top: 25px;
+  background-color: rgba(250, 235, 215, 0.877);
+  font-style: arial;
 }
 
 .container {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: flex-start;
+  color: rgb(10, 10, 10);
+  background-color: rgba(0, 0, 0, 0.281);
+  height: 95%;
+  width: 95%;
 }
 
-.board {
-  flex-basis: 60%;
-  display: grid;
-  grid-template-columns: 15vw 15vw 15vw;
-  grid-template-rows: 15vw 15vw 15vw;
-  color: white;
-  justify-items: stretch;
-  justify-content: center;
-}
-
-.board div {
+.dashboard {
   display: flex;
+  justify-content: center;
   align-items: center;
-  border: 3px solid var(--react);
+  padding-left: 2%;
+  width: 15vw;
+  height: 95vh;
 }
 
-h4 {
+.sidebar {
+  list-style-type: square;
+  font-size: larger;
+  font-style: arial;
+  padding: 5%;
+}
+
+li {
+  padding: 10%;
+}
+
+.average-rating,
+.reviews,
+.sentiment-analysis {
+  display: inline-block;
+  justify-content: center;
   text-align: center;
-  flex-basis: 100%;
-  align-self: center;
+  font-style: arial;
+  background-color: rgba(0, 0, 0, 0.301);
+  margin-top: 15px;
+  margin-left: 2%;
+  width: 25%;
+  height: 40%;
 }
 
-.X,
-.O {
-  flex-basis: 45%;
-  text-align: center;
+.list {
+  list-style: none;
 }
 
-.X {
-  color: var(--sea-serpent);
+.website-visitors {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.301);
+  font-style: arial;
+  margin-top: 20%;
+  margin-left: -79%;
+  width: 79%;
+  height: 50%;
 }
 
-.O {
-  color: var(--aquamarine);
+.visitors {
+  margin-left: 20px;
 }
-h1 {
-  flex-basis: 60%;
-  color: var(--react);
-  text-align: center;
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.281);
+  width: 59rem;
+  height: 60%;
 }
